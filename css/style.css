@@ -2,7 +2,6 @@
 	width: 100%;
 	background: rgba(56,9,0, 10);
 	color: white;
-	height: 35px;
 	font-size: 20px;
 }
 
@@ -10,6 +9,7 @@
 	position: absolute;
 	right: 5px;
 	top: 5px;
+	font-size: 600%;
 }
 
 #menu-list {
