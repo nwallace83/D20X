@@ -1,0 +1,40 @@
+#header {
+	width: 100%;
+	background: rgba(56,9,0, 10);
+	color: white;
+	height: 35px;
+	font-size: 20px;
+}
+
+#menu-widget {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+
+#menu-list {
+	list-style-type: none;
+	text-align: center;
+	padding: 0px;
+}
+
+#menu-area {
+	text-align: center;
+	display: none;
+}
+
+.menu-item {
+	background: rgba(95, 93, 106, 10);
+	color: white;
+	border-radius: 5px;
+	border: 1px solid black;
+	margin-bottom: 1px;
+}
+
+#content-area {
+	color: white;
+}
+
+body {
+	background: black;
+}
