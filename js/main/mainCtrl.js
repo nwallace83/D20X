@@ -4,7 +4,7 @@ app.controller('mainCtrl', function($scope, mainService) {
 	if (!$scope.equipment) {
 		$scope.equipment = {
 			"Bands": false,
-			"Barbell": false,
+			"Barbell": true,
 			"Body Only": false,
 			"Cable": false,
 			"Dumbbell": false,

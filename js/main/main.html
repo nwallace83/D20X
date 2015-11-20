@@ -1,17 +1,23 @@
-<button ng-click="randomSingle()">Get New Workout</button>
-
+<div class="next-prev-div">
+	<span ng-click="randomSingle()">Next exercise
+		<span class="glyphicon glyphicon-chevron-right"></span>
+	</span>
+</div>
 
 <div ng-repeat="exercise in exercises">
 
-<div>
-<div style="border: 1px solid white; display: inline-block">
-<p style="text-align: center; font-size: 200%">{{exercise.Name}}</p>
-<p>Equipment: {{exercise.Equipment}}</p>
-<p>Level: {{exercise.Level}}</p>
-<p>Muscle: {{exercise.Muscle}}</p>
-<p>Description: {{exercise.Description}}</p>
-</div>
+	<div class="main-exercise">
+		<div id="main-e-name">
+			<p>{{exercise.Name}}</p>
+		</div>
+		<hr />
+		<div id="exercise-img-div">
+			<img src="{{exercise.Pic}}"  style="width:100%"/>
+		</div>
+		<p><span class="title">Equipment:</span> {{exercise.Equipment}}</p>
+		<p><span class="title">Muscle:</span> {{exercise.Muscle}}</p>
+		<p><span class="title">Description:</span> {{exercise.Description}}</p>
 
-<img src="{{exercise.Pic}}"  style="width:50%"/>
-</div>
+	<p style="clear: both"></p>
+	</div>
 </div>

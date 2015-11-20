@@ -24,17 +24,68 @@
 }
 
 .menu-item {
-	background: rgba(95, 93, 106, 100);
+	background: rgba(95, 93, 106, 1.0);
 	color: white;
 	border-radius: 5px;
 	border: 1px solid black;
 	margin-bottom: 1px;
+	font-size: 200%;
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 #content-area {
 	color: white;
 }
 
+.main-exercise {
+	width: 95%;
+	border: 10px solid rgba(56,9,0, 1.0);
+	margin: auto;
+	border-radius: 15px;
+	background: rgba(117, 116, 115, 1.0);
+	color: white;
+	font-size: 110%;
+	padding: 10px;
+}
+
+#main-e-name {
+	font-size: 200%;
+	text-align: center;
+	color: rgba(56,9,0, 1.0);
+	font-weight: bold;
+}
+
 body {
 	background: black;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 125%;
+	color: rgba(56,9,0, 1.0);
+}
+
+.title-muscle {
+	text-align: right;
+}
+
+.next-prev-div {
+	text-align: right;
+	width: 95%;
+	color: white;
+	font-size: 125%;
+}
+.next-prev-div:hover {
+	cursor: pointer;
+}
+
+#exercise-img-div {
+	width: 50%;
+	float: right;
+	border: 1px solid black;
+}
+
+hr {
+	background-color: rgba(55, 53, 52, 1.0);
 }
