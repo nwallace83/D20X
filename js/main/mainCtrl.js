@@ -16,6 +16,28 @@ app.controller('mainCtrl', function($scope, mainService) {
 		};
 	}
 
+	if (!$scope.muscle) {
+		$scope.muscle = {
+			"Abdominals": false,
+			"Abductors": false,
+			"Adductors": false,
+			"Biceps": true,
+			"Calves": false,
+			"Chest": false,
+			"Forearms": false,
+			"Glutes": false,
+			"Hamstrings": false,
+			"Lats": false,
+			"Lower Back": false,
+			"Middle Back": false,
+			"Neck": false,
+			"Quadriceps": false,
+			"Shoulders": false,
+			"Traps": false,
+			"Triceps": false
+		};
+	}
+
 	$scope.randomSingle = function() {
 		if (!equipmentSelected()) {
 			console.log('No equipment selected');
@@ -24,7 +46,8 @@ app.controller('mainCtrl', function($scope, mainService) {
 		while (true) {
 			ranWorkout = mainService.getWorkout(1);
 			reqEquipment = ranWorkout['Equipment'].trim();
-			if ($scope.equipment[reqEquipment]) {
+			reqMuscle = ranWorkout['Muscle'].trim();
+			if ($scope.equipment[reqEquipment] && $scope.muscle[reqMuscle]) {
 				break;
 			}
 		}
